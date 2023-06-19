@@ -12,13 +12,14 @@ User -> DBMS -> Database ပုံစံမျိုးပေါ့။ အသု
 DBMS တွေကအမျိုးမျိုးရှိတယ်၊ ရွေးချယ်ထားတဲ့ database models ပေါ်မူတည်ပြီးတော့ DBMS ပုံစံတွေကလည်းကွဲပြားတယ်။ Database model ဆိုတာကတော့ database system တစ်ခုမှာ data တွေကိုဘယ်လို structure တွေနဲ့သိမ်းဆည်းမယ်၊ ချိတ်ဆက်မယ်ဆိုတာတွေကိုသတ်မှတ်ထားတဲ့ ပုံစံဖြစ်ပါတယ်။ ဥပမာ Model A ဆိုရင် Excel ထဲမှာ rows တွေ column တွေနဲ့မှတ်ပြီးသိမ်းမယ်၊ Model B ဆိုရင် Notepad ထဲမှာပဲ key value pair ပုံစံတွေနဲ့သိမ်းမယ် စသည်ဖြင့် model ပေါ်မူတည်ပြီး data တွေကိုစီမံခန့်ခွဲပုံကလည်း ကွဲပြောင်းသွားပါတယ်။
 Database Models တွေအများကြီးထဲကမှအသုံးများတဲ့ models တွေကို list down လုပ်ပေးထားလိုက်ပါမယ်။
 
--      Relational Model
--      Hierarchical Model
--      Network Model
--      Object-Oriented Model
--      Document Model
--      Graph Model
+- Relational Model
+- Hierarchical Model
+- Network Model
+- Object-Oriented Model
+- Document Model
+- Graph Model
 စသည်ဖြင့်ရှိကြပါတယ်။ DB Engines ranking ဆိုပြီးရိုက်ရှာကြည့်လိုက်မယ်ဆိုရင်လည်းအသုံးများတဲ့ model တွေကိုတွေ့နိုင်ပါတယ်။
+
 https://db-engines.com/en/ranking
 
 ဒီ article series မှာကတော့ Structure Query Language (SQL) ကိုအသုံးပြုတဲ့ Relational Model အကြောင်းကိုပဲလေ့လာသွားကြပါမယ်။ 
