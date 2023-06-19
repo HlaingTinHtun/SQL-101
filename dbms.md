@@ -25,13 +25,16 @@ https://db-engines.com/en/ranking
 Relational model ကိုအသုံးပြုတဲ့ RDBMS မှာလည်း provider ပေါ်မူတည်ပြီးတော့ DBMS software တွေကအနည်းနဲ့အများကွဲပြားသွားနိုင်ပါသေးတယ်။ 
 သို့ပေမယ့် SQL oriented approach နဲ့သွားတာဖြစ်တဲ့အတွက်အများကြီးပြောင်းလဲသွားတာတော့မရှိပါဘူး။
 ဥပမာ
-Oracle Database
-MySQL
-PostgreSQL
-Microsoft SQL Server စသည်ဖြင့်ပေါ့။ အားလုံးက RDBMS ဖြစ်ပေမယ့် company ပေါ်မူတည်ပြီးအသုံးပြုပုံအနည်းငယ်ကွာဟသွားနိုင်ပါတယ်။
+- Oracle Database
+- MySQL
+- PostgreSQL
+- Microsoft SQL Server
+စသည်ဖြင့်ပေါ့။ အားလုံးက RDBMS ဖြစ်ပေမယ့် company ပေါ်မူတည်ပြီးအသုံးပြုပုံအနည်းငယ်ကွာဟသွားနိုင်ပါတယ်။
 
 Relational Model တွေက data တွေကိုဘယ်လိုသိမ်းဆည်းလဲဆိုတာနဲ့ပြန်ဆက်ရအောင်။ 
+
 သူတို့က data တွေကို table ပုံစံ၊ row , column နှစ်ခုပါတဲ့ two dimensional structures နဲ့သိမ်းဆည်းပါတယ်။ 
 table တစ်လုံးခြင်းဆီတိုင်းမှာ rows (records) , columns (fields) ပုံစံတွေနဲ့သက်ဆိုင်ရာ data တွေကိုထည့်သွင်းသိမ်းဆည်းပါတယ်။ 
 row (record) တစ်ခုခြင်းဆီတိုင်းကို unique ဖြစ်စေဖို့ (row အချင်းချင်း duplicate/conflict) မဖြစ်စေရန် primary key သတ်မှတ်ပေးပြီးတော့ table တစ်လုံးက field တစ်ခုကနေပြီးတော့ နောက် table တစ်လုံးက primary key ကိုလှမ်း reference လုပ်ချင်တဲ့အချိန်မှာ foreign key အဖြစ်သတ်မှတ်တာမျိုးတွေလည်းရှိပါတယ်။
-လောလောဆယ်တော့နည်းနည်းရှုပ်နေနိုင်သေးပေမယ့် query တွေရေးကြည့်တဲ့အခါလွယ်ကူသွားပါလိမ့်မယ်။
+
+လောလောဆယ်တော့နည်းနည်းရှုပ်နေနိုင်သေးပေမယ့် နောက်လာမယ့်အပိုင်းတွေမှာ query တွေရေးကြည့်တဲ့အခါလွယ်ကူသွားပါလိမ့်မယ်။
