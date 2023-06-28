@@ -44,7 +44,7 @@ Programming တစ်ခုခုရထားပြီးသားဆိုရ�
 -	Naming ပေးတဲ့အခါ space နဲ့ special characters တွေကိုရှောင်ရှားရန်။
 -	လိုအပ်ပါက space အစား underscore သို့ Camel Case အသုံးပြုရန်။
 -	ကိုယ်သုံးတဲ့ casing ကို consistent ဖြစ်အောင်သုံးရန်။
-  - တစ်နေရာမှာ underscore, တစ်နေရာမှာ camel case, နောက်တစ်နေရာမှာ snake case ဆိုရင် readability ညံ့စေတဲ့အပြင် query ကိုရှုပ်ထွေးစေပါတယ်။
+    - တစ်နေရာမှာ underscore, တစ်နေရာမှာ camel case, နောက်တစ်နေရာမှာ snake case ဆိုရင် readability ညံ့စေတဲ့အပြင် query ကိုရှုပ်ထွေးစေပါတယ်။
 
 အရှေ့အပိုင်းမှာ Table, Row, Column ကို intro ဝင်ခဲ့ပါတယ်။ အခုထပ်ပီးရှင်းလင်းပေးသွားပါမယ်။
 
