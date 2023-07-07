@@ -47,7 +47,8 @@ MySQL Data Types (Version 8.0) အတွက်ဖြစ်ပါတယ်။ (DB
  ![DateTime_DataTypes](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/datetime_datatypes.png)
  
  
-https://www.w3schools.com/sql/sql_datatypes.asp
+[https://www.w3schools.com/sql/sql_datatypes.asp](https://www.w3schools.com/sql/sql_datatypes.asp)
+
 ဒီ URL ကနေတစ်ဆင့်လည်းသွားရောက်ဖတ်ရှုနိုင်ပါတယ်။
 
 ## Why Data Types?
