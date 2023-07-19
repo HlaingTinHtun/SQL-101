@@ -10,45 +10,59 @@ https://dev.mysql.com/downloads/installer/
 ![Win Installation](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/win/window1.png) <br/>
 
 no thanks, just start my download ကိုနှိပ်ပြီး download ချပါမယ်။
+
 ![Win Installation](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/win/window2.PNG) <br/>
 
 exe file ကို double click လုပ်ပြီး installation ကိုစတင်ပါမယ်။
+
 ![Win Installation](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/win/window3.PNG) <br/>
 
 developer default ကိုရွေးပီး next နှိပ်ပါမယ်။
+
 ![Win Installation](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/win/window4.png) <br/>
 
+
 Path ကိုရွေးပြီး next နှိပ်ပါမယ်။
+
 ![Win Installation](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/win/window5.png) <br/>
 
 Execute ကိုနှိပ်ပြီး install စပါမယ်။
+
 ![Win Installation](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/win/window6.png) <br/>
 
 Next နှိပ်ပါမယ်။
+
 ![Win Installation](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/win/window7.png) <br/>
 
 Next နှိပ်ပါမယ်။
+
 ![Win Installation](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/win/window8.png) <br/>
 
 Setting ကိုစစ်ပြီး Next နှိပ်ပါမယ်။
+
 ![Win Installation](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/win/window9.png) <br/>
 
 legacy authentication method ကိုရွေးပြီး Next နှိပ်ပါမယ်။ အကယ်လို့ local environment မဟုတ်ဘဲ production environment တွေမှာဆိုရင်တော့ strong password option မျိုးကိုရွေးသင့်ပါတယ်။ local ကိုယ့်စက်ထဲမှာတော့ကြိုက်တာရွေးထည့်ထားနိုင်ပါတယ်။
 ![Win Installation](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/win/window10.png) <br/>
 
 Password ထည့်ပြီး Next နှိပ်ပါမယ်။
+
 ![Win Installation](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/win/window11.png) <br/>
 
 Next နှိပ်ပါမယ်။
+
 ![Win Installation](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/win/window12.png) <br/>
 
 Full access grant လုပ်ပြီး Next နှိပ်ပါမယ်။
+
 ![Win Installation](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/win/window13.png) <br/>
 
 Configuration တွေ applyလုပ်ဖို့အတွက် execute ကိုနှိပ်ပါမယ်။
+
 ![Win Installation](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/win/window14.png) <br/>
 
 Finish ကိုနှိပ်ပါမယ်။
+
 ![Win Installation](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/win/window15.png) <br/>
 
 Product configurationsတွေထပ်လုပ်ဖို့အတွက် next ကိုနှိပ်ပါမယ်။
