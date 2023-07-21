@@ -5,3 +5,4 @@
 * [DBMS](dbms.md)
 * [Introduction to SQL](sql\_intro.md)
 * [Data Types in SQL](datatypes.md)
+* [Environment Setup](environment_setup.md)
