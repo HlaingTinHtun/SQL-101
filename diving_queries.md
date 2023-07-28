@@ -78,6 +78,7 @@ Data တွေကိုပြန်စစ်ကြည့်ရအောင်။
 `select * from menu`
 
 ![Selecting data](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/ds7.png) 
+
 menu table ထဲမှာရှိတဲ့ data အားလုံးကိုပြပါလို့ဆိုလိုတာဖြစ်ပါတယ်။ SELECT နဲ့ FROM keyword ကိုအသုံးပြုပါတယ်။ 
 `*` ကတော့အားလုံးကိုဆိုလိုခြင်းဖြစ်ပါတယ်။
 
