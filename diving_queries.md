@@ -8,7 +8,7 @@ Query တွေရေးတဲ့အချိန်မှာ CLI (command line i
 
 MySQL 8.0 command line client ကို window start menu ကနေတစ်ဆင့်ဖွင့်လိုက်ပါမယ်။ password ရိုက်ထည့်ပြီးရင်အသုံးပြုနိုင်ပါပြီ။
 
-![Win Installation](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/ds1.png) 
+![Opening CLI](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/ds1.png) 
 
 Query တွေစမ်းရေးကြည့်နိုင်ဖို့အတွက် Database တစ်လုံးအရင်ဆောက်ကြည့်ရအောင်။
 Database ဆောက်ဖို့အတွက် schema ပါ။
@@ -22,12 +22,12 @@ Database ဆောက်ဖို့အတွက် schema ပါ။
 
 `show databases` ကိုသုံးပြီးပြန်စစ်ကြည့်မယ်ဆို restaurant db ကိုတွေ့ရပါမယ်။
 
-![Win Installation](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/ds2.png) 
+![Creating database](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/ds2.png) 
 
 ဆောက်ထားတဲ့ restaurant db ကိုအသုံးပြုရန်
 `use restaurant` ဆိုပြီးရိုက်လိုက်ပါမယ်။
 
-![Win Installation](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/ds3.png) 
+![Using database](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/ds3.png) 
 
 ဆိုင်မှာရနိုင်တဲ့ဟင်းပွဲတွေကိုသိမ်းဖို့အတွက် menu ဆိုတဲ့ table ဆောက်ပါမယ်။
 
@@ -51,12 +51,12 @@ CREATE TABLE menu (name VARCHAR(100), price INTEGER(10), category VARCHAR(50), c
 ```
 `show tables` နဲ့ပြန်စစ်ကြည့်မယ်ဆို ဒီလိုမြင်ရပါလိမ့်မယ်။
 
-![Win Installation](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/ds4.png) 
+![Creating table](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/ds4.png) 
 
 Table structure ကိုပါကြည့်ချင်တယ်ဆို 
 `DESCRIBE` ဆိုတဲ့ keyword ကိုအသုံးပြုနိုင်ပါတယ်။
 
-![Win Installation](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/ds5.png) 
+![Checking table structure](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/ds5.png) 
 
 Table ဆောက်ပြီးပြီဆိုတော့ data နည်းနည်းထည့်ကြည့်ရအောင်။
 #### Schema
@@ -71,13 +71,13 @@ column နေရာမှာ column name တွေအစားထိုးပြ
 ```
 INSERT INTO menu (name, price, category, created_date, updated_date) VALUES ('Dish A', 10000, 'Main Course', '2023-07-28', '2023-07-28'), ('Dish B', 6000, 'Appetizer', '2023-07-28', '2023-07-28'), ('Dish C', 5000, 'Dessert', '2023-07-28', '2023-07-28');
 ```
-![Win Installation](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/ds6.png) 
+![Inserting data](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/ds6.png) 
 
 Data တွေကိုပြန်စစ်ကြည့်ရအောင်။
 
 `select * from menu`
 
-![Win Installation](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/ds7.png) 
+![Selecting data](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/ds7.png) 
 menu table ထဲမှာရှိတဲ့ data အားလုံးကိုပြပါလို့ဆိုလိုတာဖြစ်ပါတယ်။ SELECT နဲ့ FROM keyword ကိုအသုံးပြုပါတယ်။ 
 `*` ကတော့အားလုံးကိုဆိုလိုခြင်းဖြစ်ပါတယ်။
 
@@ -87,13 +87,13 @@ menu table ထဲမှာရှိတဲ့ data အားလုံးကို
 #### Query
 `select name from menu;`
 
-![Win Installation](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/ds8.png) 
+![Selecting a column](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/ds8.png) 
 
 တစ်ခုထက်ပိုတဲ့ column ကိုဆွဲချင်တယ်ဆိုရင်လည်း comma ခံပြီးဆွဲထုတ်လို့ရပါတယ်။
 #### Query
 `select name,price from menu;`
 
-![Win Installation](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/ds9.png)
+![Selecting multiple columns](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/ds9.png)
 
 ရိုးရိုး SELECT ကိုသုံးပြီး data ထုတ်ရာကနေ condition လေးတွေခံပြီးထုတ်ကြည့်ရအောင်။ `menu` table ထဲကမှ `category` က `Main Course` ဖြစ်တဲ့ item ကိုပဲလိုချင်တယ်ဆိုပါစို့။
 `WHERE` ဆိုတဲ့ keyword ကိုသုံးပြီးဒီလိုဆွဲထုတ်လို့ရပါတယ်။
@@ -110,7 +110,7 @@ condition နေရာမှာ category က Main Course ပါဆိုတဲ�
 ```
 SELECT * FROM menu WHERE category = 'Main Course';
 ```
-![Win Installation](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/ds10.png) 
+![Select where](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/ds10.png) 
 
 သတိထားမိလားမသိဘူး၊ ကျနော် sql keywords တွေကို စာလုံးအသေးနဲ့ရောအကြီးနဲ့ရောသုံးသွားတယ်၊ နှစ်ခုလုံးအလုပ်လုပ်ပါတယ်။
 သို့သော်ဖတ်ရလွယ်ကူရန်နဲ့ sql keywords တွေမှန်းသိသာအောင် capital letter ကိုသုံးတာကပိုပြီးသင့်တော်စေပါတယ်။
@@ -122,7 +122,7 @@ SELECT * FROM menu WHERE price < 10000;
 ```
 10000 ထက်နည်းတဲ့ items နှစ်ခုကိုတွေ့ရပါမယ်။
 
-![Win Installation](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/ds11.png) 
+![Select where](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/ds11.png) 
 
 လောလောဆယ်တော့ဒီလောက်ထိပဲသွားထားပါမယ်။ နောက်ပိုင်း queries တွေဆက်ရေးကြပါဦးမယ်။
 table ကို delete ပြန်ချကြည့်ရအောင်။
@@ -135,7 +135,7 @@ table_name မှာ `menu` ကိုအစားထိုးလိုက်ပ�
 ```
 DROP TABLE menu;
 ```
-![Win Installation](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/ds12.png) 
+![Deleting table](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/ds12.png) 
 
 
 Queries အကြောင်းနည်းနည်းတီးမိခေါက်မိရှိသွားပြီဆိုတော့ DDL, DQL, DML ဒီသုံးခုအကြောင်းကိုဆက်ရှင်းပေးသွားပါမယ်။
