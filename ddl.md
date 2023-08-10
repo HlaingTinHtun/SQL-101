@@ -42,7 +42,7 @@ CREATE TABLE students(
 
 `SHOW TABLES;` နဲ့ပြန်ပြီးစစ်ကြည့်နိုင်ပါတယ်။
 
-![creating db](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/ddl/ddl2.png)
+![creating table](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/ddl/ddl2.png)
 
 ## ALTER TABLE: Modifying Table Structure
 
@@ -65,7 +65,7 @@ ADD nick_name VARCHAR(50);
 
 `DESCRIBE` keyword ကိုသုံးပြီးပြန်စစ်ကြည့်နိုင်ပါတယ်။
 
-![creating db](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/ddl/ddl3.png)
+![alter_col_add](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/ddl/ddl3.png)
 
 ### Changing column name (column အမည်ပြောင်းခြင်း)
 
@@ -84,9 +84,9 @@ RENAME COLUMN name TO formal_name;
 
 `DESCRIBE` keyword ကိုသုံးပြီးပြန်စစ်ကြည့်နိုင်ပါတယ်။
 
-![creating db](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/ddl/ddl4.png)
+![alter_col_rm](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/ddl/ddl4.png)
 
-###Dropping a column (column ဖျက်ခြင်း)
+### Dropping a column (column ဖျက်ခြင်း)
 
 #### Schema
 ```
@@ -102,7 +102,7 @@ DROP COLUMN remarks;
 
 `DESCRIBE` keyword ကိုသုံးပြီးပြန်စစ်ကြည့်နိုင်ပါတယ်။
 
-![creating db](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/ddl/ddl5.png)
+![alter_drop_col](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/ddl/ddl5.png)
 
 ## DROP TABLE: Removing a Table (Table ဖျက်ခြင်း)
 
@@ -118,7 +118,7 @@ DROP TABLE table_name;
 DROP TABLE students;
 ```
 
-![creating db](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/ddl/ddl6.png)
+![remove table](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/ddl/ddl6.png)
 
 ## Constraints: Ensuring Data Integrity
 
@@ -140,8 +140,8 @@ CREATE TABLE table_name (
 );
 ```
 
-students table ကိုအရင်ဖျက်ပါမယ်။
-students table မှာ student_id ကို Primary key constraint ထည့်ပြီးတော့ဆောက်ကြည့်ပါမယ်။
+`students` table ကိုအရင်ဖျက်ပါမယ်။
+`students` table မှာ student_id ကို Primary key constraint ထည့်ပြီးတော့ဆောက်ကြည့်ပါမယ်။
 
 #### Query
 ```
@@ -153,7 +153,7 @@ CREATE TABLE students (
 ```
 `DESCRIBE` keyword ကိုသုံးပြီးပြန်စစ်ကြည့်နိုင်ပါတယ်။
 
-![creating db](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/ddl/ddl7.png)
+![const_primary](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/ddl/ddl7.png)
 
 ### FOREIGN KEY Constraint:
 
@@ -195,11 +195,11 @@ CREATE TABLE students(
 
 `DESCRIBE` keyword ကိုသုံးပြီးပြန်စစ်ကြည့်နိုင်ပါတယ်။
 
-![creating db](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/ddl/ddl8.png)
+![const_fk_des](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/ddl/ddl8.png)
 
 ကိုယ်ဆောက်ခဲ့တဲ့ reference key ဝင်မဝင်ဆိုတာကို `SHOW CREATE TABLE` သုံးပြီးကြည့်ရင်ပိုမြင်နိုင်ပါတယ်။
 
-![creating db](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/ddl/ddl9.png)
+![const_fk_ref](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/ddl/ddl9.png)
 
 ### NOT NULL Constraint:
 
@@ -228,7 +228,7 @@ CREATE TABLE students(
 
 `DESCRIBE` keyword ကိုသုံးပြီးပြန်စစ်ကြည့်နိုင်ပါတယ်။
 
-![creating db](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/ddl/ddl10.png)
+![const_notnull](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/ddl/ddl10.png)
 
 ### DEFAULT Constraint:
 
@@ -257,7 +257,7 @@ CREATE TABLE students (
 
 `DESCRIBE` keyword ကိုသုံးပြီးပြန်စစ်ကြည့်နိုင်ပါတယ်။
 
-![creating db](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/ddl/ddl11.png)
+![const_default](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/ddl/ddl11.png)
 
 ### UNIQUE Constraint:
 
@@ -284,7 +284,7 @@ CREATE TABLE students(
 ```
 `DESCRIBE` keyword ကိုသုံးပြီးပြန်စစ်ကြည့်နိုင်ပါတယ်။
 
-![creating db](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/ddl/ddl12.png)
+![const_unique](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/ddl/ddl12.png)
 
 အသုံးများတဲ့ DDL queries တွေဖော်ပြပေးခဲ့တာဖြစ်ပါတယ်။ တိကျသေချာတဲ့ database schema တစ်ခုထွက်လာအောင်တည်ဆောက်တဲ့နေရာမှာ DDL ကိုကျွမ်းကျင်ဖို့က အလွန်အရေးပါပါတယ်။ 
 နောက်အပိုင်းမှာ DQL အကြောင်းကိုဆက်လေ့လာသွားကြပါမယ်။
