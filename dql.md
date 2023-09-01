@@ -25,6 +25,7 @@ CREATE TABLE products (
 ```
 
 ![DQL2](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/dql/dql2.png)
+
 Table ဆောက်ပြီးပြီးဆိုတော့ dummy data တစ်ချို့ထည့်သွင်းပါမယ်။
 `INSERT` statement ကိုသုံးပါမယ်။
 ```
@@ -40,6 +41,7 @@ INSERT INTO products VALUES
 ```
 
 ![DQL3](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/dql/dql3.png)
+
 DQL ဖြစ်တဲ့အတွက်ဒီအပိုင်းမှာ `SELECT` statement နဲ့ `WHERE` statement ကိုအဓိကသုံးသွားမှာဖြစ်ပြီးတော့ query schema ကတော့အောက်ပါအတိုင်းဖြစ်ပါတယ်။
 ```
 SELECT column1, column2, ...
@@ -59,8 +61,9 @@ WHERE category = 'Electronics';
 တူညီတဲ့ value ကိုလိုချင်တဲ့အတွက် `=` sign ကိုအသုံးပြုပါတယ်။
 
 ![DQL4](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/dql/dql4.png)
+
 ဈေးနှုန်း price column ကို 100 ကျော်တဲ့ records တွေကိုဆွဲထုတ်ကြည့်ပါမယ်။
-`*` မသုံးဘဲနဲ့လိုချင်တဲ့ column တွေကိုပဲ comma နဲ့ဖြတ်ပြီးသတ်မှတ်ပေးလိုက်ပါမယ်။၏
+`*` မသုံးဘဲနဲ့လိုချင်တဲ့ column တွေကိုပဲ comma နဲ့ဖြတ်ပြီးသတ်မှတ်ပေးလိုက်ပါမယ်။
 
 ```
 SELECT product_name, price
@@ -68,12 +71,13 @@ FROM products
 WHERE price > 100;
 ```
 100`ကျော်`တဲ့ records ဆိုတဲ့အတွက် `>` sign ကိုအသုံးပြုပါတယ်။
-အောက်ရောက်တယ်ဆိုရင် < less than sign ကိုသုံးပါမယ်။
-အားလုံးသိပြီးထားတဲ့ sign တွေအတိုင်းပါပဲ 
-less than and equal ဆို ≤
-greater than and equal ဆို ≥  အသုံးပြုပါတယ်။
+အောက်ရောက်တယ်ဆိုရင် `<` less than sign ကိုသုံးပါမယ်။</br>
+အားလုံးသိပြီးထားတဲ့ sign တွေအတိုင်းပါပဲ </br>
+less than and equal ဆို `≤`</br>
+greater than and equal ဆို `≥`  အသုံးပြုပါတယ်။</br>
 
 ![DQL5](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/dql/dql5.png)
+
 ဒီတစ်ခါ `AND` ဆိုတဲ့ keyword ကိုသုံးပြီး condition နှစ်ခု combine လုပ်ကြည့်ပါမယ်။ လွယ်ကူပါတယ်၊ condition နှစ်ခုကြားမှာအောက်ကလို `AND` ဆိုပြီးခံပေးလိုက်ရုံပါပဲ။ condition ကတော့ stock_quantity column ကို 50 အောက်ရောက်နေပြီးတော့ ဈေးနှုန်းက 20 ထက်ကြီးတဲ့ records တွေကိုဆွဲထုတ်ပါမယ်။
 
 ```
@@ -82,6 +86,7 @@ FROM products
 WHERE stock_quantity < 50 AND price > 20;
 ```
 ![DQL6](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/dql/dql6.png)
+
 ဒီတစ်ခါတော့ `product_name` မှာ `Smart` ဆိုတဲ့ value ပါတဲ့ records တွေကိုဆွဲထုတ်ပါမယ်။
 keyword နဲ့တိုက်ပီးရှာချင်တယ်ဆိုရင် `%` sign ကိုအသုံးပြုပါတယ်။
 
@@ -100,6 +105,7 @@ WHERE product_name LIKE '%Smart%';
 
 ![DQL7](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/dql/dql7.png)
 
+
 `supplier` တန်ဖိုးက `NULL` ဖြစ်နေ (မရှိနေ)တဲ့ records တွေကိုဆွဲထုတ်ကြည့်ပါမယ်။
 
 ```
@@ -109,6 +115,7 @@ WHERE supplier IS NULL;
 ```
 
 ![DQL8](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/dql/dql8.png)
+----------
 Range တန်ဖိုးတွေဆက်ဆွဲထုတ်ကြည့်ရအောင်၊ ဘယ်တန်ဖိုးကနေ ဘယ်တန်ဖိုးအထိဆိုတာမျိုးပေါ့။
 
 `WHERE` နောက်မှာ `BETWEEN` နဲ့ `AND` keyword ကိုလိုက်ပြီးအသုံးပြုနိုင်ပါတယ်။
