@@ -9,7 +9,7 @@ MySQL command line client ကိုဖွင့်ပြီးတော့ DQL q
 `use dql_test;` ဆိုပြီးလုပ်ပေးထားလိုက်ပါမယ်။
 
 ![DQL1](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/dql/dql1.png)
-
+-
   
 DQL queries တွေစမ်းဖို့အတွက် `products` ဆိုတဲ့ table တစ်ခုဆောက်ပါမယ်။ 
 
@@ -26,6 +26,7 @@ CREATE TABLE products (
 
 ![DQL2](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/dql/dql2.png)
 -
+
 Table ဆောက်ပြီးပြီးဆိုတော့ dummy data တစ်ချို့ထည့်သွင်းပါမယ်။
 `INSERT` statement ကိုသုံးပါမယ်။
 ```
@@ -41,6 +42,7 @@ INSERT INTO products VALUES
 ```
 
 ![DQL3](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/dql/dql3.png)
+-
 
 DQL ဖြစ်တဲ့အတွက်ဒီအပိုင်းမှာ `SELECT` statement နဲ့ `WHERE` statement ကိုအဓိကသုံးသွားမှာဖြစ်ပြီးတော့ query schema ကတော့အောက်ပါအတိုင်းဖြစ်ပါတယ်။
 ```
@@ -50,6 +52,7 @@ WHERE condition;
 ```
 Condition နေရာမှာတော့လိုအပ်သလိုပုံစံမျိုးစုံလိုက်နိုင်ပါတယ်။ အောက်ကနမူနာတွေမှာဆက်ဖော်ပြပေးထားပါတယ်။
 
+### Equal
 ပထမဦးဆုံး products table ထဲကနေ `category` column က `Electronics` ဖြစ်တဲ့ value ကိုဆွဲထုတ်ကြည့်ပါမယ်။
 column value အားလုံးလိုချင်တဲ့အတွက် * ကိုသုံးပါမယ်။
 
@@ -61,7 +64,9 @@ WHERE category = 'Electronics';
 တူညီတဲ့ value ကိုလိုချင်တဲ့အတွက် `=` sign ကိုအသုံးပြုပါတယ်။
 
 ![DQL4](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/dql/dql4.png)
+-
 
+### Greater than
 ဈေးနှုန်း price column ကို 100 ကျော်တဲ့ records တွေကိုဆွဲထုတ်ကြည့်ပါမယ်။
 `*` မသုံးဘဲနဲ့လိုချင်တဲ့ column တွေကိုပဲ comma နဲ့ဖြတ်ပြီးသတ်မှတ်ပေးလိုက်ပါမယ်။
 
@@ -74,11 +79,13 @@ WHERE price > 100;
 အောက်ရောက်တယ်ဆိုရင် `<` less than sign ကိုသုံးပါမယ်။</br>
 အားလုံးသိပြီးထားတဲ့ sign တွေအတိုင်းပါပဲ </br>
 less than and equal ဆို `≤`</br>
-greater than and equal ဆို `≥`  အသုံးပြုပါတယ်။</br>
+greater than and equal ဆို `≥`  အသုံးပြုပါတယ်။
 
 ![DQL5](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/dql/dql5.png)
+-
 
-ဒီတစ်ခါ `AND` ဆိုတဲ့ keyword ကိုသုံးပြီး condition နှစ်ခု combine လုပ်ကြည့်ပါမယ်။ လွယ်ကူပါတယ်၊ condition နှစ်ခုကြားမှာအောက်ကလို `AND` ဆိုပြီးခံပေးလိုက်ရုံပါပဲ။ condition ကတော့ stock_quantity column ကို 50 အောက်ရောက်နေပြီးတော့ ဈေးနှုန်းက 20 ထက်ကြီးတဲ့ records တွေကိုဆွဲထုတ်ပါမယ်။
+### AND
+ဒီတစ်ခါ `AND` ဆိုတဲ့ keyword ကိုသုံးပြီး condition နှစ်ခု combine လုပ်ကြည့်ပါမယ်။ လွယ်ကူပါတယ်၊ condition နှစ်ခုကြားမှာအောက်ကလို `AND` ဆိုပြီးခံပေးလိုက်ရုံပါပဲ။</br> condition ကတော့ stock_quantity column ကို 50 အောက်ရောက်နေပြီးတော့ ဈေးနှုန်းက 20 ထက်ကြီးတဲ့ records တွေကိုဆွဲထုတ်ပါမယ်။
 
 ```
 SELECT product_name, stock_quantity, price
@@ -86,8 +93,10 @@ FROM products
 WHERE stock_quantity < 50 AND price > 20;
 ```
 ![DQL6](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/dql/dql6.png)
+-
 
-ဒီတစ်ခါတော့ `product_name` မှာ `Smart` ဆိုတဲ့ value ပါတဲ့ records တွေကိုဆွဲထုတ်ပါမယ်။
+### % (Find)
+ဒီတစ်ခါတော့ `product_name` မှာ `Smart` ဆိုတဲ့ value ပါတဲ့ records တွေကိုဆွဲထုတ်ပါမယ်။</br>
 keyword နဲ့တိုက်ပီးရှာချင်တယ်ဆိုရင် `%` sign ကိုအသုံးပြုပါတယ်။
 
 ```
@@ -96,16 +105,17 @@ FROM products
 WHERE product_name LIKE '%Smart%';
 ```
 
-`WHERE column_name LIKE 'abc%'`
-% sign ကနောက်မှာ value ကရှေ့မှာဆို abc နဲ့စတဲ့ values ရှာမယ်။
-`WHERE column_name LIKE '%a' `
-% sign ကရှေ့မှာ value ကနောက်မှာဆို abc နဲ့ဆုံးတဲ့ values ရှာမယ်။
-`WHERE column_name LIKE '%abc%' `
+`WHERE column_name LIKE 'abc%'`</br>
+% sign ကနောက်မှာ value ကရှေ့မှာဆို abc နဲ့စတဲ့ values ရှာမယ်။</br>
+`WHERE column_name LIKE '%a' `</br>
+% sign ကရှေ့မှာ value ကနောက်မှာဆို abc နဲ့ဆုံးတဲ့ values ရှာမယ်။</br>
+`WHERE column_name LIKE '%abc%' `</br>
 % sign ကိုရှေ့နောက်နှစ်ခုလုံးကပ်ထားမယ်ဆိုနေရာမရွေးဘဲရှာမယ်။
 
 ![DQL7](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/dql/dql7.png)
+-
 
-
+### NULL
 `supplier` တန်ဖိုးက `NULL` ဖြစ်နေ (မရှိနေ)တဲ့ records တွေကိုဆွဲထုတ်ကြည့်ပါမယ်။
 
 ```
@@ -115,10 +125,12 @@ WHERE supplier IS NULL;
 ```
 
 ![DQL8](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/dql/dql8.png)
-----------
-Range တန်ဖိုးတွေဆက်ဆွဲထုတ်ကြည့်ရအောင်၊ ဘယ်တန်ဖိုးကနေ ဘယ်တန်ဖိုးအထိဆိုတာမျိုးပေါ့။
+-
 
-`WHERE` နောက်မှာ `BETWEEN` နဲ့ `AND` keyword ကိုလိုက်ပြီးအသုံးပြုနိုင်ပါတယ်။
+### BETWEEN AND
+Range တန်ဖိုးတွေဆက်ဆွဲထုတ်ကြည့်ရအောင်၊ ဘယ်တန်ဖိုးကနေ ဘယ်တန်ဖိုးအထိဆိုတာမျိုးပေါ့။</br>
+
+`WHERE` နောက်မှာ `BETWEEN` နဲ့ `AND` keyword ကိုလိုက်ပြီးအသုံးပြုနိုင်ပါတယ်။</br>
 `BETWEEN` နောက်မှာအစတန်ဖိုး၊ `AND` နောက်မှာအဆုံးတန်ဖိုးထည့်ပါမယ်။
 
 ```
@@ -128,8 +140,11 @@ WHERE price BETWEEN 50 AND 100;
 ```
 
 ![DQL9](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/dql/dql9.png)
-အပေါ်မှာတုန်းကတူတဲ့ value ဆိုချင်ရင် `=` ဆိုတဲ့ sign ကိုအသုံးပြုခဲ့တယ်။
-`=` က value တစ်ခုပဲ assign လုပ်ချင်ပေမယ့် value တစ်ခုထက်ပိုပြီးထည့်သုံးချင်တဲ့အခါ `IN` ဆိုတဲ့ keyword ကိုပြောင်းသုံးရပါမယ်။
+-
+
+### IN
+အပေါ်မှာတုန်းကတူတဲ့ value ဆိုချင်ရင် `=` ဆိုတဲ့ sign ကိုအသုံးပြုခဲ့တယ်။</br>
+`=` က value တစ်ခုပဲ assign လုပ်ချင်ပေမယ့် value တစ်ခုထက်ပိုပြီးထည့်သုံးချင်တဲ့အခါ `IN` ဆိုတဲ့ keyword ကိုပြောင်းသုံးရပါမယ်။</br>
 
 `category` column က `Clothing` ဒါမှမဟုတ် `Accessories` ဖြစ်တဲ့ records တွေကိုဆွဲထုတ်ကြည့်ပါမယ်။
 ```
@@ -139,11 +154,17 @@ WHERE category IN ('Clothing', 'Accessories');
 ```
 
 ![DQL10](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/dql/dql10.png)
+-
+
+### NOT IN
 `IN` ရဲ့ပြောင်းပြန် `NOT IN` ကိုသုံးလိုက်မယ်ဆိုရင်တော့အဲ့ဒီ value တွေမပါတဲ့ records တွေကိုဆွဲထုတ်ပေးပါလိမ့်မယ်။
 အောက်က screenshot မှာ result ကိုကြည့်နိုင်ပါတယ်။
 
 ![DQL11](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/dql/dql11.png)
-value ကတစ်ခုတည်းဆိုရင်တော့ `NOT IN` ကိုမသုံးဘဲ `NOT` ဆိုတဲ့ keyword တစ်ခုတည်းနဲ့လည်းအသုံးပြုနိုင်ပါတယ်။
+-
+
+### NOT
+value ကတစ်ခုတည်းဆိုရင်တော့ `NOT IN` ကိုမသုံးဘဲ `NOT` ဆိုတဲ့ keyword တစ်ခုတည်းနဲ့လည်းအသုံးပြုနိုင်ပါတယ်။</br>
 အောက်မှာဆိုရင် `category` က `Furniture` မဟုတ်တဲ့ records တွေကိုဆွဲထုတ်ထားတာဖြစ်ပါတယ်။
 
 ```
@@ -153,5 +174,6 @@ WHERE NOT category = 'Furniture';
 ```
 
 ![DQL12](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/dql/dql12.png)
+-
 
-DQL ရဲ့သဘောက data တွေကိုမိမိလိုချင်သလိုဆွဲထုတ်နိုင်ဖို့ပါပဲ၊ ဒီလိုဆွဲထုတ်ဖို့အတွက် SELECT နဲ့ WHERE ကဘယ်လောက်ထိအရေးပါလဲဆိုတာအထက်က queries တွေကိုကြည့်ရင်မြင်နိုင်ပါတယ်။ အခု article မှာတော့ DQL သဘောပေါ်လွင်အောင် ရိုးရှင်းတဲ့ query တွေကိုပဲအသုံးပြုထားပါသေးတယ်။ နောက်ပိုင်းမှာ advance ဖြစ်တဲ့ query တွေနဲ့ data ဆွဲထုတ်ပုံတွေကိုလည်းဆက်လက်ရေးသားပေးပါမယ်။
+DQL ရဲ့သဘောက data တွေကိုမိမိလိုချင်သလိုဆွဲထုတ်နိုင်ဖို့ပါပဲ၊ ဒီလိုဆွဲထုတ်ဖို့အတွက် SELECT နဲ့ WHERE ကဘယ်လောက်ထိအရေးပါလဲဆိုတာအထက်က queries တွေကိုကြည့်ရင်မြင်နိုင်ပါတယ်။</br> အခု article မှာတော့ DQL သဘောပေါ်လွင်အောင် ရိုးရှင်းတဲ့ query တွေကိုပဲအသုံးပြုထားပါသေးတယ်။ </br>နောက်ပိုင်းမှာ advance ဖြစ်တဲ့ query တွေနဲ့ data ဆွဲထုတ်ပုံတွေကိုလည်းဆက်လက်ရေးသားပေးပါမယ်။
