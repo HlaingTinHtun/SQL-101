@@ -9,3 +9,4 @@
 * Diving Into SQL Queries
   *  [Query Introduction](diving_queries.md)
   *  [Data Definition Language](ddl.md)
+  *  [Data Query Language](dql.md)
