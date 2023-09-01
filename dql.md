@@ -1,6 +1,8 @@
 # DQL (Data Query Language)
 
-Database ထဲက data တွေကိုဆွဲထုတ်လိုတဲ့အချိန်မှာ DQLလို့ခေါ်တဲ့ query တွေကိုအသုံးပြုပါတယ်။ `SELECT` ကိုအသုံးပြုပြီးတော့ အနောက်မှာ condition အခြေအနေအမျိုးမျိုးလိုက်ပြီးတော့ data တွေကို filter လုပ်နိုင်ပါတယ်။ Condition အခြေအနေတွေသတ်မှတ်ဖို့အတွက် `WHERE` ဆိုတဲ့ statement ကိုသုံးပါတယျ။ WHERE statement ရဲ့နောက်မှာလိုသလို filter လုပ်သွားနိုင်ပါတယ်။ဒီအပိုင်းမှာတော့ DQL ကိုပေါ်လွင်အောင်ရိုးရှင်းတဲ့ နမူနာ queries တွေနဲ့အတူလေ့လာသွားကြပါမယ်။
+Database ထဲက data တွေကိုဆွဲထုတ်လိုတဲ့အချိန်မှာ DQLလို့ခေါ်တဲ့ query တွေကိုအသုံးပြုပါတယ်။ 
+`SELECT` ကိုအသုံးပြုပြီး အနောက်မှာ condition အခြေအနေအမျိုးမျိုးလိုက်ကာ data တွေကို filter လုပ်နိုင်ဖို့အတွက် `WHERE` ဆိုတဲ့ keyword ကိုသုံးပါတယ်။ 
+ဒီအပိုင်းမှာတော့ DQL ကိုပေါ်လွင်အောင်ရိုးရှင်းတဲ့နမူနာ queries တွေနဲ့အတူလေ့လာသွားကြပါမယ်။
 
 MySQL command line client ကိုဖွင့်ပြီးတော့ DQL queries တွေစမ်းရေးကြည့်ဖို့အတွက် database အသစ်တစ်ခုဆောက်ရအောင်။
 
@@ -44,7 +46,7 @@ INSERT INTO products VALUES
 ![DQL3](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/dql/dql3.png)
 -
 
-DQL ဖြစ်တဲ့အတွက်ဒီအပိုင်းမှာ `SELECT` statement နဲ့ `WHERE` statement ကိုအဓိကသုံးသွားမှာဖြစ်ပြီးတော့ query schema ကတော့အောက်ပါအတိုင်းဖြစ်ပါတယ်။
+DQL ဖြစ်တဲ့အတွက်ဒီအပိုင်းမှာ `SELECT` နဲ့ `WHERE` keyword ကိုအဓိကသုံးသွားမှာဖြစ်ပြီးတော့ query schema ကတော့အောက်ပါအတိုင်းဖြစ်ပါတယ်။
 ```
 SELECT column1, column2, ...
 FROM products
