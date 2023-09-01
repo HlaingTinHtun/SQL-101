@@ -25,7 +25,7 @@ CREATE TABLE products (
 ```
 
 ![DQL2](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/dql/dql2.png)
-
+-
 Table ဆောက်ပြီးပြီးဆိုတော့ dummy data တစ်ချို့ထည့်သွင်းပါမယ်။
 `INSERT` statement ကိုသုံးပါမယ်။
 ```
