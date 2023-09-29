@@ -11,3 +11,5 @@
   *  [Data Definition Language](ddl.md)
   *  [Data Query Language](dql.md)
   *  [Data Manipulation Language](dml.md)
+* Let's get our hands dirty 
+  *  [Sorting & Filtering](sf.md)
