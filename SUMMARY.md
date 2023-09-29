@@ -10,3 +10,4 @@
   *  [Query Introduction](diving_queries.md)
   *  [Data Definition Language](ddl.md)
   *  [Data Query Language](dql.md)
+  *  [Data Manipulation Language](dml.md)
