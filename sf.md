@@ -29,6 +29,7 @@ VALUES
     (8, 'Alice Johnson', 'AJ', 21, 'History');
 ```
 `select *` နဲ့ data တွေကိုပြန်စစ်ကြည့်နိုင်ပါတယ်။
+
 ![SF2](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/sf/sf2.png)
 
 ---
@@ -145,7 +146,7 @@ SELECT * FROM students
 WHERE (major = 'Computer Science' OR major = 'Mathematics')
 AND age = 22;
  ```
- Heading
+ 
 ![SF12](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/sf/sf12.png)
 
 ---
