@@ -14,3 +14,4 @@
 * Let's get our hands dirty 
   *  [Sorting & Filtering](sf.md)
   *  [Logical & Comparison Operators](operators.md)
+  *  [Aggregations](aggregation.md)
