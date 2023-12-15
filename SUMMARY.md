@@ -16,4 +16,6 @@
   *  [Logical & Comparison Operators](operators.md)
   *  [Aggregations](aggregation.md)
   *  [DATE & TIME](dnt.md)
+* Relationships 
   *  [Relationship](relationship.md)
+  *  [Joins](joins.md)
