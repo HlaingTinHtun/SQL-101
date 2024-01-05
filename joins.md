@@ -37,7 +37,7 @@ INSERT INTO student_details (student_id, address) VALUES
 (2, 'Mandalay, Myanmar'),
 (3, 'Naypyidaw, Myanmar'),
 (4, 'Bago, Myanmar'),
-(5, 'Magway, Myanmar'),
+(5, 'Magway, Myanmar');
 ```
 ![join](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/join/j1.png)
 
