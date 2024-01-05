@@ -19,3 +19,4 @@
 * Relationships 
   *  [Relationship](relationship.md)
   *  [Joins](joins.md)
+  *  [Relationship in queries](rtq.md)
