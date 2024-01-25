@@ -97,7 +97,7 @@ ALTER TABLE table_name
 #### Query
 ```
 ALTER TABLE students
-DROP COLUMN remarks;
+DROP COLUMN remark;
 ```
 
 `DESCRIBE` keyword ကိုသုံးပြီးပြန်စစ်ကြည့်နိုင်ပါတယ်။
@@ -169,7 +169,7 @@ CREATE TABLE clubs(
 );
 ```
 
-`DROP students table;`
+`DROP TABLE students;`
 ပြီးရင်လက်ရှိ club_id ဆိုတဲ့ column ထပ်ဖြည့်ပြီး students ပြန် create လုပ်ပါမယ်။ 
 students table ထဲက club_id ကို FK အဖြစ်သတ်မှတ်ပြီး clubs ဆိုတဲ့ table ရဲ့ primary key `club_id` ကိုလှမ်း reference လုပ်လိုက်ပါမယ်။
 
