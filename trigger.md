@@ -48,7 +48,7 @@ DELIMITER ;
 `DELIMITER` ထည့်သုံးရခြင်းကတော့ trigger လို stored procedure တွေမှာ statements တွေတစ်ခုထက်ပိုပါနိုင်ပြီး `;` အများအပြားရှိနိုင်ပြီး syntax error ဖြစ်နိုင်တဲ့အတွက် `DELIMITER` ကိုသုံးပြီးတော့ ယာယီအစားထိုးထားလိုက်ခြင်းဖြစ်ပါတယ်။ DELIMITER အကြောင်းအသေးစိတ်ကိုအောက်ကလင့်ခ်မှာဆက်ဖတ်နိုင်ပါတယ်။
 https://www.mysqltutorial.org/mysql-stored-procedure/mysql-delimiter/
 
-ဆောက်လိုက်တဲ့ trigger ကိုဒီလိုပြန်ထည့်နိုင်ပါတယ်။
+ဆောက်လိုက်တဲ့ trigger ကိုဒီလိုပြန်ကြည့်နိုင်ပါတယ်။
 
 ##### Schema
 ```
@@ -89,11 +89,11 @@ BEGIN
 DELIMITER ;
 ```
 
-ဒီလောက်ဆိုရင် `triggers` တွေအကြောင်းကိုအခြေခံအားဖြင့်နားလည်သွားမယ်လို့ထင်ပါတယ်၊ project domain ပေါ်မူတည်ပြီး trigger တွေဟာ ယခုထက်ပိုပြီး complex ဖြစ်နိုင်ပါတယ်။ များသောအားဖြင့်လက်ရှိအသုံးပြုနေတဲ့ programming language နဲ့ framework တွေမှာ support ရှိတဲ့အတွက် `trigger` တွေသီးသန့်မဖန်တီးဘဲ `application` layer မှာတင် `before` & `after` hook တွေနဲ့ develop လုပ်နိုင်ပါတယ်။ သို့ပေမယ့်လည်း `trigger` တွေကိုအသုံးပြုမယ့်အခြေအနေတွေလည်းရှိနေနိုင်သေးပါတယ်။
+ဒီလောက်ဆိုရင် `triggers` တွေအကြောင်းကိုအခြေခံအားဖြင့်နားလည်သွားမယ်လို့ထင်ပါတယ်၊ project domain ပေါ်မူတည်ပြီး trigger တွေဟာ ယခုထက်ပိုပြီး complex ဖြစ်နိုင်ပါတယ်။ များသောအားဖြင့်လက်ရှိအသုံးပြုနေတဲ့ programming language နဲ့ framework တွေမှာ support ရှိတဲ့အတွက် `trigger` တွေသီးသန့်မဖန်တီးဘဲ `application` layer မှာတင် DB transaction `before` & `after` hook တွေနဲ့ develop လုပ်နိုင်ပါတယ်။ သို့ပေမယ့်လည်း `trigger` တွေကိုအသုံးပြုမယ့်အခြေအနေတွေလည်းရှိနေနိုင်သေးပါတယ်။
 
 Trigger တွေသုံးမယ်ဆို
 -	Performance overhead မဖြစ်အောင်ဂရုစိုက်ပြီး တတ်နိုင်သမျှ lightweight ဖြစ်အောင်ဖန်တီးသင့်ပါတယ်။
--	Trigger တွေမှာပုံမှန် query တွေထက်အနည်းငယ်ဖတ်ရခက်နိုင်တဲ့အတွက် over complex မဖြစ်အောင်၊ ရေရှည်မှာ maintainability issues တွေမရှိအောင် review လုပ်ထားသင့်ပါတယ်။ သင့်တော်တဲ့ comments တွေနဲ့တစ်ပါတည်း document လုပ်ထားသင့်ပါတယ်။
+-	Trigger တွေက ပုံမှန် query တွေထက်အနည်းငယ်ဖတ်ရခက်နိုင်တဲ့အတွက် over complex မဖြစ်အောင်၊ ရေရှည်မှာ maintainability issues တွေမရှိအောင် review လုပ်ထားသင့်ပါတယ်။ သင့်တော်တဲ့ comments တွေနဲ့တစ်ပါတည်း document လုပ်ထားသင့်ပါတယ်။
 -	Triggers တွေဆောက်ပြီးတာနဲ့ ကိုယ်လိုအပ်သလို trigger ဖြစ်ရဲ့လားဆိုတာကိုလည်း Test သေချာလုပ်ထားသင့်ပါတယ်၊ မဟုတ်ရင် `triggers` တွေကအတော်လေး risk ကြီးပါတယ်။
 
 Conclude လုပ်ရမယ်ဆို `triggers` တွေကိုအသုံးပြုခြင်းဖြင့် DB ဘက်ခြမ်းမှာတင် automation tasks တွေဖန်တီးနိုင်တဲ့အတွက်အလွန်အသုံးဝင်နိုင်သလို best practices တွေမလိုက်နာရင်လည်း database အတွက် risk များတတ်နိုင်တဲ့အတွက်ကြောင့်ဂရုပြုပြီးဖန်တီးသင့်ပါတယ်။
