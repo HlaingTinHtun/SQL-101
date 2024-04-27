@@ -18,7 +18,9 @@ Transaction execution (commit) လုပ်ပြီးသွားတာနဲ�
 
 Geeksforgeeks က ဒီပုံလေးနဲ့ဆိုပိုပြီးမြင်သာသွားမယ်ထင်ပါတယ်။
 
+
 ![Credit : GeeksforGeeks](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/tran/tr8.png)
+
 
 ACID properties ကိုအတိုချုပ်ရေးထားပေမယ့်အသေးစိတ်ကို ဒီမှာဝင်ဖတ်ကြည့်လို့ရပါတယ်။
 https://www.geeksforgeeks.org/acid-properties-in-dbms/
