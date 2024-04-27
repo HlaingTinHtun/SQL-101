@@ -17,6 +17,7 @@ Transaction တစ်ခုနဲ့တစ်ခုအပေါ်မှာမ�
 Transaction execution (commit) လုပ်ပြီးသွားတာနဲ့ system failure, power outage တွေရှိသည့်တိုင်အောင် data တွေ persist ဖြစ်နေမယ်။
 
 Geeksforgeeks က ဒီပုံလေးနဲ့ဆိုပိုပြီးမြင်သာသွားမယ်ထင်ပါတယ်။
+
 ![Credit : GeeksforGeeks](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/queries/tran/tr8.png)
 
 ACID properties ကိုအတိုချုပ်ရေးထားပေမယ့်အသေးစိတ်ကို ဒီမှာဝင်ဖတ်ကြည့်လို့ရပါတယ်။
