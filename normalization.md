@@ -186,8 +186,7 @@ Skill သည် non-prime attribute ဖြစ်ပါတယ်၊ superkey ဖ�
 
 `skills` table
 
-| skill_id | skill_name     | project_name      |
-
+| skill_id | skill_name     | project_name |
 |------------|------------|------------|
 | 1          | Java       | ProjectA       |
 | 2          | SQL        | ProjectB       |
