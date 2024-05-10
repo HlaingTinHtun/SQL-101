@@ -24,3 +24,4 @@
   *  [Indexing](index.md)
   *  [Triggers](trigger.md)
   *  [Transactions](transaction.md)
+  *  [Normalization](normalization.md)
