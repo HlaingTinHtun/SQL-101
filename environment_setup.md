@@ -46,7 +46,7 @@ Setting ကိုစစ်ပြီး Next နှိပ်ပါမယ်။
 
 ![Win Installation](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/win/window9.png) <br/>
 
-legacy authentication method ကိုရွေးပြီး Next နှိပ်ပါမယ်။ အကယ်လို့ local environment မဟုတ်ဘဲ production environment တွေမှာဆိုရင်တော့ strong password option မျိုးကိုရွေးသင့်ပါတယ်။ local ကိုယ့်စက်ထဲမှာတော့ကြိုက်တာရွေးထည့်ထားနိုင်ပါတယ်။
+legacy authentication method ကိုရွေးပြီး Next နှိပ်ပါမယ်။ အကယ်လို့ local environment မဟုတ်ဘဲ production environment တွေမှာဆိုရင်တော့ strong password option မျိုးကိုရွေးသင့်ပါတယ်။ local ကိုယ့်စက်ထဲမှာတော့ကြိုက်တာရွေးထည့်ထားနိုင်ပါတယ်။ <br/>
 ![Win Installation](https://raw.githubusercontent.com/HlaingTinHtun/SQL-101/main/assets/win/window10.png) <br/>
 
 Password ထည့်ပြီး Next နှိပ်ပါမယ်။
