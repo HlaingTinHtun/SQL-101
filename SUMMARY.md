@@ -26,3 +26,4 @@
   *  [Transactions](transaction.md)
   *  [Normalization](normalization.md)
 * [Entity Relationship Diagram](erd.md)
+* [Conclusion] (conclusion.md)
