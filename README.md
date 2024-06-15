@@ -10,4 +10,7 @@ Series ထဲမှာမပါနိုင်တဲ့တစ်ခြားသ�
 Gitbook ကနေတစ်ဆင့်လွယ်လင့်တကူဖတ်ရှုနိုင်ပါတယ်။
 https://bit.ly/3Xb5xGc <br /> 
 
+Web development နဲ့ပတ်သတ်တဲ့ playlists, videos များကိုလည်း Youtube မှာဝင်ရောက်ကြည့်ရှုနိုင်ပါတယ်။ <br />
+https://bit.ly/3xtURtI <br />
+
 ကျေးဇူးတင်ပါတယ်ခင်ဗျာ။
